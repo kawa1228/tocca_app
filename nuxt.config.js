@@ -4,7 +4,15 @@ import pkg from './package'
 export default {
   mode: 'spa',
   srcDir: 'app',
-
+  baseURL: 'https://tocca-app.firebaseio.com',
+  env: {
+    APIKEY: process.env.FIREBASE_API_KEY,
+    AUTHDOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
+    DATABASEURL: process.env.FIREBASE_DATABASE_URL,
+    PROJECTID: process.env.FIREBASE_PROJECT_ID,
+    STORAGEBUCKET: process.env.FIREBASE_STORAGE_BUCKET,
+    MESSAGINGSENDERID: process.env.FIREBASE_MESSAGING_SENDER_ID
+  },
   /*
    ** Headers of the page
    */
@@ -38,7 +46,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/vuetify'],
+  plugins: ['@/plugins/vuetify', '@/plugins/firebase.js'],
 
   /*
    ** Nuxt.js modules
@@ -52,7 +60,6 @@ export default {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: 'https://tocca-app.firebaseio.com'
   },
 
   /*

@@ -2,6 +2,8 @@
 
 > My impressive Nuxt.js project
 
+https://tocca-app.firebaseapp.com
+
 ## Build Setup
 
 ``` bash

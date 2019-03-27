@@ -20,3 +20,17 @@ $ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+# environment variable
+
+[direnv](https://github.com/direnv/direnv)
+
+.envrc
+```
+export FIREBASE_API_KEY=<API KEY>
+...
+```
+
+```
+$ direnv allow
+```

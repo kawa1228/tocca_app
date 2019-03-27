@@ -4,7 +4,6 @@ import pkg from './package'
 export default {
   mode: 'spa',
   srcDir: 'app',
-  baseURL: 'https://tocca-app.firebaseio.com',
   env: {
     APIKEY: process.env.FIREBASE_API_KEY,
     AUTHDOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
@@ -60,6 +59,7 @@ export default {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'https://tocca-app.firebaseio.com'
   },
 
   /*

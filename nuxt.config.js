@@ -4,6 +4,7 @@ import pkg from './package'
 export default {
   mode: 'spa',
   srcDir: 'app',
+  // buildDir: 'dist2',
   env: {
     APIKEY: process.env.FIREBASE_API_KEY,
     AUTHDOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
@@ -45,7 +46,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/vuetify', '@/plugins/firebase.js'],
+  plugins: ['@/plugins/vuetify', '@/plugins/firebase'],
 
   /*
    ** Nuxt.js modules

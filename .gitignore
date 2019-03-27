@@ -85,3 +85,7 @@ sw.*
 
 # environment variable
 .envrc
+
+# firebase
+.firebase
+.firebaserc
